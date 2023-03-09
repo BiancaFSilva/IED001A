@@ -1,10 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <locale.h>
 
 int main () {
-	setlocale(LC_ALL, ""); // Permite acentuação
-	
 	int m[3][3], l, c;
 	int s[] = {0, 0, 0};
 	
@@ -15,7 +11,7 @@ int main () {
 		};
 	};
 	
-	printf("\nA matriz formada é: \n\n");
+	printf("\nA matriz formada e: \n\n");
 	for (l = 0; l <= 2; l++) {	
 		for (c = 0; c <= 2; c++) {	
 			printf("  %d ", m[l][c]);
@@ -31,7 +27,7 @@ int main () {
 	};
 	
 	for (c = 0; c <= 2; c++) {	
-		printf("\n  %dª coluna: %d", (c + 1), s[c]);
+		printf("\n  Coluna 0%d: %d", (c + 1), s[c]);
 	};
 	
   	return(0);
